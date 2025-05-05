@@ -8,9 +8,9 @@ module.exports = (sequelize, DataTypes) => {
       Matricula.belongsTo(models.Pessoa, {
         foreignKey: 'estudante_id',
       });
-      Matricula.belongsTo(models.Matricula, {
-        foreignKey: 'cursonpx _id',
-      });
+      // Matricula.belongsTo(models.Matricula, {
+      //   foreignKey: 'curso _id',
+      // });
     }
   }
   Matricula.init({
