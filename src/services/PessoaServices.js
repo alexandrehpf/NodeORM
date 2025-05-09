@@ -12,6 +12,10 @@ class PessoaServices extends Services {
         console.log('aqui 3 '+ listaMatriculas);
         return listaMatriculas;
     }
+    async pegaPessoasEscpoTodos () {
+        const listaPessoas = await super.pegaRegistrosPorEscopo('todosOsRegistros');
+        return listaPessoas;
+    }
 
 }
 
